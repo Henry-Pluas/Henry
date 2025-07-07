@@ -1,0 +1,261 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* que quede por encima de todo */
+  background-color: #002147;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo img {
+  height: 50px; /* Tamaño del escudo */
+}
+
+.menu-2 ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-2 a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.menu-2 a:hover {
+  color: #ffc107; /* Amarillo Barça */
+}
+
+
+/* Video de fondo */
+.video-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 50px;
+    /* espacio para no tapar barra */
+}
+
+.video-header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenido centrado encima del video */
+.contenido-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.contenido-video h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Concepto abajo */
+.concepto h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.concepto p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.texto-1 {
+    padding: 60px 20px;
+    background-color: #631717;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.productos-categorias {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0px;
+
+    padding: 80px 80px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.categoria {
+    background-color:#fbff09;
+    color: white;
+    padding: 20px 2px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.categoria:hover {
+    background-color: #000000;
+}
+.imagen-centrada {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.imagen-centrada img {
+  width: 500px; /* o el tamaño que quieras */
+  border-radius: 10px;
+}
+
+/* Contenedor general del texto y el video */
+.concepto-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    background-color: #321ec9;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Lado del texto */
+.concepto-video .texto-3 {
+    flex: 1 1 55%;
+    font-size: 1em;
+}
+
+/* Lado del video */
+.concepto-video .video {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.concepto-video video {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Contacto {
+    width: 10000%;
+    background-color: #9b1b16;
+    /* verde fuerte */
+    color: white;
+    padding: 50px 20px;
+}
+
+.texto-4 {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contacto h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.Contacto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.Contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Contacto ul li {
+    font-size: 1em;
+    margin: 8px 0;
+}
+
+
+.servicios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.servicio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 130px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.servicio-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.servicio-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.servicio-card span {
+    font-size: 0.95em;
+    text-align: center;
+}
